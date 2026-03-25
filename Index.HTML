@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rocket Launch Challenge</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="hero">
+      <p class="eyebrow">🚀 Mission Control</p>
+      <h1>Rocket Launch Challenge</h1>
+      <p class="tagline">Fastest hand in Mission Control wins.</p>
+    </header>
+
+    <section class="panel scoreboard">
+      <div class="score-card">
+        <span class="label">Best Time</span>
+        <span id="bestTime" class="value">-- ms</span>
+      </div>
+      <div class="score-card">
+        <span class="label">Last Time</span>
+        <span id="lastTime" class="value">-- ms</span>
+      </div>
+      <div class="score-card">
+        <span class="label">Status</span>
+        <span id="pilotRank" class="value">Awaiting pilot</span>
+      </div>
+    </section>
+
+    <section class="panel launch-panel">
+      <div id="statusMessage" class="status-message">
+        Click <strong>Start Mission</strong> to begin the launch sequence.
+      </div>
+
+      <button id="startButton" class="btn btn-primary">Start Mission</button>
+      <button id="launchButton" class="btn btn-launch" disabled>Launch Now</button>
+      <button id="resetBestButton" class="btn btn-secondary">Reset Best Score</button>
+    </section>
+
+    <section class="panel how-to">
+      <h2>How to Play</h2>
+      <ol>
+        <li>Click <strong>Start Mission</strong>.</li>
+        <li>Wait for Mission Control to finish checking systems.</li>
+        <li>When <strong>Launch Now</strong> lights up, click it as fast as you can.</li>
+        <li>Click too early and you get a <strong>false start</strong>.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
